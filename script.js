@@ -32,9 +32,9 @@ function singleRound(player, computer) {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        console.log(singleRound(playerSelection, computerSelection));
         playerSelection = window.prompt("Rock, Paper or Scissors?");
         computerSelection = computerPlay();
+        console.log(singleRound(playerSelection, computerSelection));
     }
 
     if (playerScore > computerScore) {
