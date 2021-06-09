@@ -1,10 +1,10 @@
-let playerSelection = window.prompt("Rock, Paper or Scissors?");
+let playerSelection = "";
+let computerSelection = "";
 
 function selections() {
    playerSelection = window.prompt("Rock, Paper or Scissors?");
    computerSelection = computerPlay();
 }
-
 
 function computerPlay() {
     let options = ["Rock", "Paper", "Scissors"];
@@ -12,7 +12,6 @@ function computerPlay() {
     return computerChoice;
 }
 
-let computerSelection = computerPlay();
 let playerScore = 0;
 let computerScore = 0;
 
